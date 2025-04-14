@@ -52,10 +52,10 @@ For more information, please visit [CocoaPods Getting Started guide](https://gui
 
 ```sh
 # Using npm
-npm run ios
+npm run run:android (with ios 'npm run run:ios')
 
 # OR using Yarn
-yarn ios
+yarn run:android (with ios 'yarn run:ios')
 ```
 
 If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
