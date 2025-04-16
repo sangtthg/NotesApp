@@ -1,6 +1,6 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {HomeScreen, SplashScreen} from '../../feature';
+import {AppBottomBar, SplashScreen} from '../../feature';
 
 export type RootStackParamList = {
   Home: undefined;
@@ -9,13 +9,13 @@ export type RootStackParamList = {
 
 const Stack = createStackNavigator<RootStackParamList>();
 
-export function RootNavigator() {
+export const RootNavigator = () => {
   return (
     <Stack.Navigator
       initialRouteName="Splash"
       screenOptions={{headerShown: false}}>
       <Stack.Screen name="Splash" component={SplashScreen} />
-      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Home" component={AppBottomBar} />
     </Stack.Navigator>
   );
-}
+};
